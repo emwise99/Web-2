@@ -1,0 +1,98 @@
+@import "./vendor/normalize";
+@import "./partials/typography";
+@import "./partials/colors";
+@import "./partials/mixins";
+.header_body{
+    background-color: $header-color;
+    overflow: auto;
+}
+figure {
+    margin: 0px;
+}
+.image_wrap{
+    margin: 0px;
+}
+.logo{
+    border-radius: 50%;
+    margin: 15px 0px 15px 15px;
+    float: left;
+
+}
+.header_text{
+    float: left;
+    margin: 26px 0px 20px 30px;
+    color: white;
+    font-family: $header-font;
+}
+.navbod{
+	
+margin: auto;
+}
+.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-bottom: 14px;
+}
+li{
+	display: inline;
+    font-size: 14px;
+    font-family: $primary-font;
+	padding: 20px;
+}
+.greybx{
+width: 500px;
+height: 286px;
+}
+.body_text{
+text-align: center;
+font-family: $primary-font;
+font-size: 20px;    
+}
+.image_grid_body{
+	background-color: $light-grey;
+	margin: 0px;
+}
+.square1{
+    @include grid-spacing;
+}
+.square2{
+    @include grid-spacing;
+}
+.square3{
+    @include grid-spacing;
+}
+.square4{
+    @include grid-spacing;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.footer{
+	background-color: black;
+	margin:auto;
+	float: right;
+	position: inherit;
+	width: 500px;
+}
+.foot_text{
+	color: white;
+    font-size: 12px;
+    font-family: $primary-font;
+    text-align: center;
+	
+}
